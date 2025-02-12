@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+    <body>
+        <nav>
+            <div class="nav-container">
+                Agbalaya<span>Samuel</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="#">Home</a></div>
+                <div class="link"><a href="#">About</a></div>
+                <div class="link"><a href="#">Services</a></div>
+                <div class="link"><a href="#">Skills</a></div>
+                <div class="link"><a href="#">Contact</a></div>
+            </div>
+            <i class='bx bx-menu'></i>
+
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Contact</a>
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="main-container">
+                <div class="image">
+                    <img src="IMG_0948.HEIC" alt="Profile Picture">
+                </div>
+                <div class="content">
+                    <h1>Hey, I'm <span>Samuel</span></h1>
+                    <h2 class="typing-text">I'm a Frontend Developer <span class="typed"></span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos porro maiores veritatis explicabo cupiditate aperiam quaerat alias. At, rem architecto?</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                    </div>
+        
+                    <div class="btn"><button>Hire Me</button></div>
+                </div>
+            </div>
+        
+            <!-- Contact Form Section -->
+            <div class="contact-container">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <!-- Skills Section -->
+<section class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <i class="bx bxl-html5"></i>
+            <h3>HTML</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;">90%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <i class="bx bxl-css3"></i>
+            <h3>CSS</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;">85%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <i class="bx bxl-javascript"></i>
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">80%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <i class="bx bxl-react"></i>
+            <h3>React</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;">75%</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="portfolio">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project One</h3>
+            <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>React Dashboard</h3>
+            <p>A dynamic dashboard built using React and API integration.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </div>
+</section>
+<section class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <p>"Olivia is a highly skilled developer who exceeded my expectations!"</p>
+            <h4>- John Doe, CEO of XYZ</h4>
+        </div>
+
+        <div class="testimonial">
+            <p>"Her ability to create beautiful and responsive websites is amazing!"</p>
+            <h4>- Jane Smith, Designer</h4>
+        </div>
+    </div>
+</section>
+<div class="btn">
+    <a href="Olivia_CV.pdf" download><button>Download Resume</button></a>
+</div>
+<script>
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    sections.forEach((section) => observer.observe(section));
+</script>
+
+
+        
+
+
+    </body>
+
+    </html>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
